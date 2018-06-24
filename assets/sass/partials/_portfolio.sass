@@ -1,0 +1,117 @@
+.line
+  display: flex
+  width: 100%
+  height: 100vh
+
+.item
+  width: calc(100% / 3)
+  height: 100%
+  border-right: 1px solid #E2E2E2
+  background-color: #fff
+  transition: background-color .3s ease-in-out, border .3s ease-in-out
+
+  &:hover
+    .item__filter
+      display: none
+
+    .item__text
+      transform: translateY(-100px)
+
+    .item__number,
+    .item__title
+      color: #fff
+
+    .item__role,
+    .item__img
+      opacity: 1
+
+
+.item__filter
+  background-color: rgba(255, 255, 255, .7)
+  height: 100vh
+  width: calc(100% / 3)
+  position: absolute
+  z-index: 20
+
+.item__link
+  display: flex
+  align-items: center
+  height: 100%
+  width: 100%
+  padding-left: 10.5%
+  text-decoration: none
+
+.item__text
+  transition: transform .2s ease-in-out
+  z-index: 100
+
+.item__number
+  font-size: 3em
+  font-family: $mono
+  color: #4a4a4a
+  margin-bottom: 1em
+  transition: color .3s ease-in-out
+
+.item__title
+  margin-top: 1em
+  font-size: 3em
+  font-family: $main
+  color: #4a4a4a
+  transition: color .3s ease-in-out
+
+.item__img
+  z-index: 1
+  position: absolute
+  opacity: 0
+  transition: opacity .3s ease-in-out, transform .2s ease-in-out
+
+.item__role
+  opacity: 0
+  color: #fff
+  font-family: $main
+  position: absolute
+  bottom: 3em
+  font-size: 1.2em
+  text-transform: uppercase
+  letter-spacing: 1px
+  transition: opacity .3s ease-in-out
+  z-index: 100
+
+
+
+.devinsanta
+  .item__img
+    width: 30%
+    bottom: 13%
+    right: 40%
+
+  &:hover
+    background-color: #719742
+    border-right: 1px solid #719742
+
+    .item__img
+      transform: translateX(-60%)
+
+.espaco-ki
+  .item__img
+    width: 30%
+    bottom: 0
+    right: 10%
+  &:hover
+    background-color: #E7A75C
+    border-right: 1px solid #E7A75C
+
+    .item__img
+      transform: translateX(-45%)
+
+.few
+  .item__img
+    width: 12%
+    bottom: 0
+    right: -7%
+  &:hover
+    background-color: #CB6A47
+    border-right: 1px solid #CB6A47
+
+    .item__img
+      transform: translateX(-45%)

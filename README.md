@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/img/logo.svg" width="100">
+  <img src="https://i.imgur.com/erv3eR9.png" width="100">
 </p>
 
 # RCRD Portfolio
