@@ -2,21 +2,19 @@
   display: flex
   height: 100vh
   width: 100%
-
-  @media (max-width: 800px)
-    flex-wrap: wrap
+  flex-wrap: wrap
 
 
 .item
-  background-color: #fff
-  border-right: 1px solid #E2E2E2
+  background-color: $white
+  border-bottom: 1px solid $light-gray-border
+  border-right: 1px solid $light-gray-border
   height: 100%
   position: relative
   transition: background-color .3s ease-in-out, border .3s ease-in-out
   width: calc(100% / 3)
 
   @media (max-width: 800px)
-    border-bottom: 1px solid #E2E2E2
     width: calc(100% / 2)
 
   @media (max-width: 500px)
@@ -32,7 +30,7 @@
 
     .item__number,
     .item__title
-      color: #fff
+      color: $white
 
     .item__role,
     .item__img
@@ -40,7 +38,7 @@
 
 
 .item__filter
-  background-color: rgba(255, 255, 255, .7)
+  background-color: $filter
   height: 100%
   position: absolute
   width: 100%
@@ -59,20 +57,18 @@
   z-index: 100
 
 .item__number
-  color: #4a4a4a
   font-family: $mono
   margin-bottom: 1em
-  transition: color .3s ease-in-out
 
 .item__title
-  color: #4a4a4a
   font-family: $main
   margin-top: 1em
-  transition: color .3s ease-in-out
 
 .item__number,
 .item__title
+  color: $dark-gray
   font-size: 3em
+  transition: color .3s ease-in-out
 
   @media (max-width: 1050px)
     font-size: 2em
@@ -85,7 +81,7 @@
 
 .item__role
   bottom: 3em
-  color: #fff
+  color: $white
   font-family: $main
   font-size: 1.2em
   letter-spacing: 1px
