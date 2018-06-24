@@ -1,14 +1,27 @@
-.line
+.container
   display: flex
-  width: 100%
   height: 100vh
+  width: 100%
+
+  @media (max-width: 800px)
+    flex-wrap: wrap
+
 
 .item
-  width: calc(100% / 3)
-  height: 100%
-  border-right: 1px solid #E2E2E2
   background-color: #fff
+  border-right: 1px solid #E2E2E2
+  height: 100%
+  position: relative
   transition: background-color .3s ease-in-out, border .3s ease-in-out
+  width: calc(100% / 3)
+
+  @media (max-width: 800px)
+    border-bottom: 1px solid #E2E2E2
+    width: calc(100% / 2)
+
+  @media (max-width: 500px)
+    height: 70%
+    width: 100%
 
   &:hover
     .item__filter
@@ -28,90 +41,56 @@
 
 .item__filter
   background-color: rgba(255, 255, 255, .7)
-  height: 100vh
-  width: calc(100% / 3)
+  height: 100%
   position: absolute
+  width: 100%
   z-index: 20
 
 .item__link
-  display: flex
   align-items: center
+  display: flex
   height: 100%
-  width: 100%
   padding-left: 10.5%
   text-decoration: none
+  width: 100%
 
 .item__text
   transition: transform .2s ease-in-out
   z-index: 100
 
 .item__number
-  font-size: 3em
-  font-family: $mono
   color: #4a4a4a
+  font-family: $mono
   margin-bottom: 1em
   transition: color .3s ease-in-out
 
 .item__title
-  margin-top: 1em
-  font-size: 3em
-  font-family: $main
   color: #4a4a4a
+  font-family: $main
+  margin-top: 1em
   transition: color .3s ease-in-out
 
+.item__number,
+.item__title
+  font-size: 3em
+
+  @media (max-width: 1050px)
+    font-size: 2em
+
 .item__img
-  z-index: 1
-  position: absolute
   opacity: 0
-  transition: opacity .3s ease-in-out, transform .2s ease-in-out
+  position: absolute
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out
+  z-index: 1
 
 .item__role
-  opacity: 0
+  bottom: 3em
   color: #fff
   font-family: $main
-  position: absolute
-  bottom: 3em
   font-size: 1.2em
-  text-transform: uppercase
   letter-spacing: 1px
+  opacity: 0
+  position: absolute
+  text-transform: uppercase
   transition: opacity .3s ease-in-out
   z-index: 100
-
-
-
-.devinsanta
-  .item__img
-    width: 30%
-    bottom: 13%
-    right: 40%
-
-  &:hover
-    background-color: #719742
-    border-right: 1px solid #719742
-
-    .item__img
-      transform: translateX(-60%)
-
-.espaco-ki
-  .item__img
-    width: 30%
-    bottom: 0
-    right: 10%
-  &:hover
-    background-color: #E7A75C
-    border-right: 1px solid #E7A75C
-
-    .item__img
-      transform: translateX(-45%)
-
-.few
-  .item__img
-    width: 12%
-    bottom: 0
-    right: -7%
-  &:hover
-    background-color: #CB6A47
-    border-right: 1px solid #CB6A47
-
-    .item__img
-      transform: translateX(-45%)
