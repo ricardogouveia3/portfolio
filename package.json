@@ -1,7 +1,7 @@
 {
-  "name": "7dev-website",
+  "name": "rcrd-portfolio",
   "version": "1.0.0",
-  "description": "Website for 7dev tapajós code studio",
+  "description": "personal portfolio for rcrd.me",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {

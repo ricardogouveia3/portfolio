@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="<-- LOGO -->" width="100">
+  <img src="assets/img/logo.svg" width="100">
 </p>
 
-# Gulp Boilerplate
+# RCRD Portfolio
 
-[Access the website](<-- URL -->)
+[Access the website](http://rcrd.me/portfolio)
 
 This project uses:
 - [Pug](https://pugjs.org/)
@@ -25,8 +25,8 @@ First of all, install the dependencies to run this boilerplate.
 ```sh
 
 # Clone this repository
-git clone git@github.com:ricardogouveia3/<-- REPO -->
-cd <-- REPO -->
+git clone git@github.com:ricardogouveia3/portfolio
+cd portfolio
 
 # install dependencies
 npm install
@@ -63,7 +63,7 @@ These structure will change during the project.
 
 ### Code Standarts
 
-<-- CODE STANDART -->
+This project uses [LFeh's Coding Style Guide](https://github.com/LFeh/coding-style)
 
 
 ### Tasks
