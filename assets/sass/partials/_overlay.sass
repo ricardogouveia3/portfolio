@@ -1,0 +1,44 @@
+//
+//  This file contains style for overlay elements such as logo and down arrow
+//
+
+.logo
+  left: 1.5em
+  opacity: .4
+  position: fixed
+  top: 1.5em
+  transition: opacity .3s ease-in-out
+  z-index: 1000
+
+  @media (max-width: 800px)
+    left: 1em
+    opacity: 1
+    top: 1em
+
+  @media (max-width: 500px)
+    background-color: $white
+    left: .5em
+    top: .5em
+
+  &:hover
+    opacity: 1
+
+.logo__link
+  align-items: center
+  display: flex
+  height: 120px
+  padding: .7em
+  width: 100%
+
+.logo__arrow
+  margin-right: 1em
+  width: 2em
+
+.logo__img
+  width: 6em
+
+  @media (max-width: 800px)
+    width: 5em
+
+  @media (max-width: 500px)
+    width: 3em
