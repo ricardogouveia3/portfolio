@@ -8,6 +8,13 @@
     bottom: 13%
     width: 89%
 
+  @media (max-width: 800px) //style for mobile no-hover devices
+    background-color: $devinsanta
+    border-right: 1px solid $devinsanta
+
+    .item__img
+      transform: translateX(20%) scale(1.1)
+
   &:hover
     background-color: $devinsanta
     border-right: 1px solid $devinsanta
@@ -21,6 +28,14 @@
     bottom: 0
     left: 0
     width: 100%
+
+  @media (max-width: 800px) //style for mobile no-hover devices
+    background-color: $espaco-ki
+    border-right: 1px solid $espaco-ki
+
+    .item__img
+      transform: translateX(40%) scale(1.1)
+      transform-origin: bottom right
 
   &:hover
     background-color: $espaco-ki
@@ -36,6 +51,14 @@
     bottom: 0
     width: 40%
 
+  @media (max-width: 800px) //style for mobile no-hover devices
+    background-color: $frontend-week
+    border-right: 1px solid $frontend-week
+
+    .item__img
+      transform: translateX(125%) scale(1.1)
+      transform-origin: bottom right
+
   &:hover
     background-color: $frontend-week
     border-right: 1px solid $frontend-week
@@ -48,14 +71,22 @@
 .lu-vassilak
   .item__img
     bottom: 0
-    width: 90%
+    width: 70%
+
+  @media (max-width: 800px) //style for mobile no-hover devices
+    background-color: $lu-vassilak
+    border-right: 1px solid $lu-vassilak
+
+    .item__img
+      transform: translateX(50%) scale(1.1)
+      transform-origin: bottom right
 
   &:hover
     background-color: $lu-vassilak
     border-right: 1px solid $lu-vassilak
 
     .item__img
-      transform: translateX(30%) scale(1.1)
+      transform: translateX(50%) scale(1.1)
       transform-origin: bottom right
 
 
@@ -63,6 +94,13 @@
   .item__img
     bottom: 13%
     width: 70%
+
+  @media (max-width: 800px) //style for mobile no-hover devices
+    background-color: $sevendev
+    border-right: 1px solid $sevendev
+
+    .item__img
+      transform: translateX(40%) scale(1.1)
 
   &:hover
     background-color: $sevendev

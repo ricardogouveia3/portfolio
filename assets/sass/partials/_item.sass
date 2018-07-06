@@ -14,17 +14,36 @@
 
   @media (max-width: 800px)
     width: calc(100% / 2)
+    overflow: hidden
+    border: 0
 
-    &:nth-child(3n) //not working
-      border-right: 1px solid $light-gray-border
+    &:nth-child(1), &:nth-child(2)
+      margin-top: 50px
 
-    &:nth-child(2n) //not working
-      border-right: 0
+    // Style for Mobile no-hover devices
+    .item__filter
+      display: none
+
+    .item__text
+      transform: translateY(-100px)
+
+    .item__number,
+    .item__title
+      color: $white
+
+    .item__role,
+    .item__img
+      opacity: 1
 
   @media (max-width: 500px)
-    height: 70%
+    height: 80vh
     width: 100%
-    border-right: 0
+
+    &:nth-child(1)
+      margin-top: 50px
+    &:nth-child(2)
+      margin-top: 0
+
 
   @media (min-height: 1000px)
     height: 50%
@@ -62,6 +81,10 @@
   padding-left: 10.5%
   text-decoration: none
   width: 100%
+
+  @media (max-width: 800px)
+    padding-top: 3em
+    padding-left: 8%
 
 .item__text
   transition: transform .2s ease-in-out
